@@ -101,21 +101,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun displayWeather() {
-        // Example weather data
-        val cityName = "Lahore"
-        val currentTemp = "31°C"
-        val feelsLikeTemp = "Feels Like: 39°C"
-        val currentTime = "Time: 3:22 AM"
-        val forecast = "30, 29, 29, 29, 29, 31, 32, 34, 35, 35, 35, 34 degrees"
-        val weatherDescription = "Humid and Sunny Today"
-
-        // Update UI with weather information
-        cityTextView.text = cityName
-        currentTempTextView.text = "Current Temperature: $currentTemp"
-        feelsLikeTextView.text = feelsLikeTemp
-        timeTextView.text = currentTime
-        forecastDetailsTextView.text = forecast
-        weatherTextView.text = weatherDescription
-    }
+    
 }
