@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter City"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        />
 
     <Button
         android:id="@+id/Button"
@@ -39,66 +40,74 @@
         android:id="@+id/currentTempTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Temperature: 31"
+        android:text=""
         android:textSize="24sp"
         android:textColor="@android:color/white"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
          />
-
+    <!--Fells Like-->
     <TextView
         android:id="@+id/feelsLikeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Feels Like: 39°C"
+        android:text=""
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/currentTempTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true" />
-
+         />
+    <!--time-->
     <TextView
         android:id="@+id/timeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time: 3:22 AM"
+        android:text=""
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/feelsLikeTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true" />
-
+         />
+    <!--time-->
     <TextView
         android:id="@+id/forecastTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forecast for the Next Few Hours:"
+        android:text=""
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/timeTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="24dp"
-        android:layout_centerHorizontal="true" />
-
+         />
+    <!--Forecast details-->
     <TextView
         android:id="@+id/forecastDetailsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30, 29, 29, 29, 29, 31, 32, 34, 35, 35, 35, 34 degrees"
+        android:text=""
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/forecastTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true" />
-
+         />
+    <!--Forecast details-->
     <TextView
         android:id="@+id/weatherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Humid and Sunny Today"
+        android:text=""
         android:textSize="20sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/forecastDetailsTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="24dp"
-        android:layout_centerHorizontal="true" />
+         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+         />
+
 
 </LinearLayout>
