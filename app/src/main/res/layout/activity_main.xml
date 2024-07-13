@@ -1,30 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue">
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    >
 
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast Weather"
+        android:layout_gravity="center_horizontal" />
+
+
+    
+    <!--City name-->
     <TextView
         android:id="@+id/cityTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lahore"
+        android:text=""
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:layout_marginTop="24dp"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_gravity="center_horizontal"/>
+    <!--Current Temperature-->
     <TextView
         android:id="@+id/currentTempTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Temperature: 31°C"
+        android:text="Current Temperature: 31"
         android:textSize="24sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/cityTextView"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true" />
+         />
 
     <TextView
         android:id="@+id/feelsLikeTextView"
@@ -81,4 +101,4 @@
         android:layout_marginTop="24dp"
         android:layout_centerHorizontal="true" />
 
-</RelativeLayout>
+</LinearLayout>
