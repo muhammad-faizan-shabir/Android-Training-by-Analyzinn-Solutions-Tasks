@@ -2,10 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
+    android:background="@android:color/holo_blue_dark"
     android:orientation="vertical"
-    >
-
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/editText"
@@ -13,18 +12,23 @@
         android:layout_height="wrap_content"
         android:hint="Enter City"
         android:layout_gravity="center_horizontal"
-        />
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_search"/>
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forecast Weather"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
 
-
-    
-    <!--City name-->
     <TextView
         android:id="@+id/cityTextView"
         android:layout_width="wrap_content"
@@ -32,82 +36,74 @@
         android:text=""
         android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_marginTop="24dp"
         android:layout_gravity="center_horizontal"/>
-    <!--Current Temperature-->
+
     <TextView
         android:id="@+id/currentTempTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="24sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-         />
-    <!--Fells Like-->
+        android:layout_marginTop="16dp"/>
+
     <TextView
         android:id="@+id/feelsLikeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="20sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-         />
-    <!--time-->
+        android:layout_marginTop="8dp"/>
+
     <TextView
         android:id="@+id/timeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="20sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-         />
-    <!--time-->
+        android:layout_marginTop="8dp"/>
+
     <TextView
         android:id="@+id/forecastTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="20sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-         />
-    <!--Forecast details-->
+        android:layout_marginTop="24dp"/>
+
     <TextView
         android:id="@+id/forecastDetailsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="18sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-         />
-    <!--Forecast details-->
+        android:layout_marginTop="8dp"/>
+
     <TextView
         android:id="@+id/weatherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="20sp"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-         />
+        android:layout_marginTop="24dp"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-         />
-
-
+        android:layout_marginTop="24dp"/>
 </LinearLayout>

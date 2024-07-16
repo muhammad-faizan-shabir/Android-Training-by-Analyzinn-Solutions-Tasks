@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.weatherforecastapp"
+    namespace = "com.example.try4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.weatherforecastapp"
+        applicationId = "com.example.try4"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
