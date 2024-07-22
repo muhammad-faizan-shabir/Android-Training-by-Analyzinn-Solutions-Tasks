@@ -138,7 +138,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompactButton1"
+        android:id="@+id/appCompatButton1"
         android:layout_width="350dp"
         android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,7 +158,7 @@
         android:layout_width="110dp"
         android:layout_height="3dp"
         android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/appCompactButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton1"
         app:layout_constraintEnd_toStartOf="@id/textview7"
         android:layout_marginTop="45dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -172,7 +172,7 @@
         android:layout_height="wrap_content"
         android:text="Or Sign in With"
         app:layout_constraintStart_toEndOf="@id/view1"
-        app:layout_constraintTop_toBottomOf="@id/appCompactButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton1"
         app:layout_constraintEnd_toStartOf="@id/view2"
         android:layout_marginTop="35dp"
         android:textColor="@color/light_gray"
@@ -184,7 +184,7 @@
         android:layout_width="110dp"
         android:layout_height="3dp"
         android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/appCompactButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton1"
         app:layout_constraintStart_toEndOf="@id/textview7"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="45dp"
@@ -192,16 +192,23 @@
         android:layout_marginStart="1dp"
         />
     
-    <ImageButton
-        android:id="@+id/imageButton1"
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/image_button_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appCompactButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton1"
         android:layout_marginTop="90dp"
-        android:src="@drawable/google_logo"
+        android:drawableStart="@drawable/google"
+        android:text="Google       "
+        android:textSize="24sp"
+        android:textAllCaps="false"
+
+
         />
 
     <TextView
@@ -211,7 +218,7 @@
         android:text="Don't have an account?"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/textview9"
         app:layout_constraintTop_toTopOf="@id/textview9"
@@ -223,7 +230,7 @@
         android:id="@+id/textview9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/appCompatButton2"
         app:layout_constraintStart_toEndOf="@id/textview8"
         android:layout_marginStart="4dp"
         android:text="Sign Up"
