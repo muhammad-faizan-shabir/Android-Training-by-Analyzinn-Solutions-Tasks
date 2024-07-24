@@ -61,6 +61,8 @@ class Fragment1 : Fragment() {
             val intent = Intent(activity,MainActivity2::class.java)
             intent.putExtra("item1",edittext1.text.toString())
             intent.putExtra("item2",edittext2.text.toString())
+            intent.putExtra("product", "Fashionable Jacket")
+            intent.putExtra("productImage", R.drawable.jacket)
             startActivity(intent)
         }
     }
